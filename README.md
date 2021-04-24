@@ -45,3 +45,7 @@ Step 8: Then create virtual environment in raspi and run .bash file which is ava
 Step 9: And you done now you just write the python code for detecting person and model we already have from windows.
 
 Step 10: In our project we make raspi as auto launch the system at the booting time, means we not need to required every time to connect ethernet and then connect vnc like that stuff. we simply give power up to raspi-board and it will automatically start the system.  
+
+## For run code in Raspi use below Command:
+
+### python TFLite_detection_video.py --modeldir Sample_TFLite_model/
