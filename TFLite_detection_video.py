@@ -1,18 +1,3 @@
-######## Webcam Object Detection Using Tensorflow-trained Classifier #########
-#
-# Author: Evan Juras
-# Date: 10/2/19
-# Description: 
-# This program uses a TensorFlow Lite model to perform object detection on a
-# video. It draws boxes and scores around the objects of interest in each frame
-# from the video.
-#
-# This code is based off the TensorFlow Lite image classification example at:
-# https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/examples/python/label_image.py
-#
-# I added my own method of drawing boxes and labels using OpenCV.
-
-# Import packages
 import os
 import argparse
 import cv2
@@ -167,9 +152,9 @@ while(video.isOpened()):
                 t = time.strftime('%Y-%m-%d_%H-%M-%S')
                 file = t + '.jpg'
                 cv2.imwrite(file, frame)
-                email_alert('From: Anti-Theft Alert System', "Hey, In your Shop Intruder Detected", '18DCS008@charusat.edu.in', file)
-                email_alert('From: Anti-Theft Alert System', "Hey, In your Shop Intruder Detected", '18DCS043@charusat.edu.in', file)
-                email_alert('From: Anti-Theft Alert System', "Hey, In your Shop Intruder Detected", '18DCS047@charusat.edu.in', file)
+                email_alert('From: Anti-Theft Alert System', "Hey, In your Shop Intruder Detected", 'email address', file)
+                email_alert('From: Anti-Theft Alert System', "Hey, In your Shop Intruder Detected", 'email address', file)
+                email_alert('From: Anti-Theft Alert System', "Hey, In your Shop Intruder Detected", 'email address', file)
                 os.remove(file)
                 capture = 0
                 start_time = time.time()
